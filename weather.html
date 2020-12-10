@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+       <title>What's the Weather?</title>
+       <link rel="stylesheet" href="styles.css">
+       <script src="weather.js"></script>
+   <body>
+      <h1>What's the Weather?</h1>
+      <section id="weather-input">
+         <div>
+            <label for="city1">Choose City:</label>
+                <input type="text" id="city1" style="text-align: left">
+            <span class="error-msg hidden" id="error-value-city1">Enter a city</span>
+
+            <button id="compareBtn">Show Weather</button>
+         </div>
+      </section>
+      
+      <section id="forecast" class="hidden">
+         <h2>5 Day Forecast</h2>
+
+         <p id="loading-city1">Loading...</p>
+         <p id="error-loading-city1" class="error-msg"></p>
+         <table id="results-city1">
+             <p><b id="city1-name"></b><b>, </b><b id=city1-country></b><b>, Population:</b> <b id= city1-population></p>
+             <tr>
+               <td>Day</td>
+               <td id="city1-day1-name"></td>
+               <td id="city1-day2-name"></td>
+               <td id="city1-day3-name"></td>
+               <td id="city1-day4-name"></td>
+               <td id="city1-day5-name"></td>
+            </tr>
+            <tr>
+               <td>High</td>
+               <td id="city1-day1-high"></td>
+               <td id="city1-day2-high"></td>
+               <td id="city1-day3-high"></td>
+               <td id="city1-day4-high"></td>
+               <td id="city1-day5-high"></td>
+            </tr>
+            <tr>
+               <td>Low</td>
+               <td id="city1-day1-low"></td>
+               <td id="city1-day2-low"></td>
+               <td id="city1-day3-low"></td>
+               <td id="city1-day4-low"></td>
+               <td id="city1-day5-low"></td>
+            </tr>
+             <tr>
+               <td>Humidity</td>
+               <td id="city1-day1-humidity"></td>
+               <td id="city1-day2-humidity"></td>
+               <td id="city1-day3-humidity"></td>
+               <td id="city1-day4-humidity"></td>
+               <td id="city1-day5-humidity"></td>
+            </tr>
+            <tr>
+               <td>Clouds</td>
+               <td id="city1-day1-clouds"></td>
+               <td id="city1-day2-clouds"></td>
+               <td id="city1-day3-clouds"></td>
+               <td id="city1-day4-clouds"></td>
+               <td id="city1-day5-clouds"></td>
+            </tr>
+            <tr>
+               <td>Picture</td>
+               <td><img id="city1-day1-image"</td>
+               <td><img id="city1-day2-image"</td>
+               <td><img id="city1-day3-image"</td>
+               <td><img id="city1-day4-image"</td>
+               <td><img id="city1-day5-image"</td>
+            </tr>
+         </table>
+      </section>
+   </body>
+</html>

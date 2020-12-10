@@ -1,0 +1,43 @@
+* {
+    text-align: center;
+}
+
+center {
+    text-align: left;
+}
+
+body {
+   font-family: Helvetica, sans-serif;
+   color: #555;
+   background-color: #e6f2ff;
+}
+
+#weather-input div {
+   padding-bottom: 8px;
+}
+
+.hidden {
+   display: none;
+}
+
+.error-msg {
+   color: red;
+}
+
+table {
+   margin-bottom: 15px;
+}
+
+table caption {
+   font-weight: bold;
+}
+
+table td {
+   text-align: center;
+   padding: 3px 8px;
+}
+
+#results-city1 {
+    margin-right: auto;
+    margin-left: auto;
+}
